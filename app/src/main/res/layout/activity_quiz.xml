@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gi_background_neutral"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/quiz_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp">
+    
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Score 0"
+        android:fontFamily="@font/gi_font"
+        android:textColor="@color/dark_blue" />
+
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_score"
+        android:padding="8dp"
+        android:text="Question: 1/x"
+        android:fontFamily="@font/gi_font"
+        android:textColor="@color/dark_blue" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="00:30"
+        android:fontFamily="@font/gi_font"
+        android:textColor="@color/dark_blue"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="40sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/quiz_header"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_view_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="15dp"
+                    android:text="Here will be the question text \nHere will be the question text \nHere will be the question text"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/gi_font"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/image_view_question"
+                    android:layout_below="@+id/text_view_question"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"/>
+
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_below="@+id/image_view_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="20dp">
+
+                    <RadioButton
+                        android:id="@+id/radio_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gi_font"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_blue"
+                        android:text="Option 1" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gi_font"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp"
+                        android:text="Option 2" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gi_font"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp"
+                        android:text="Option 3" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gi_font"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp"
+                        android:text="Option 4" />
+
+                 </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gi_font"
+        android:backgroundTint="@color/dark_blue"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Confirm" />
+
+</RelativeLayout>
