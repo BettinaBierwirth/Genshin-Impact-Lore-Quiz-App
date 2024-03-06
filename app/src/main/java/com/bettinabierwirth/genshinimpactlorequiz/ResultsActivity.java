@@ -1,8 +1,8 @@
 package com.bettinabierwirth.genshinimpactlorequiz;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -17,6 +17,7 @@ public class ResultsActivity extends AppCompatActivity {
      *
      * @param savedInstanceState The saved instance state.
      */
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,14 +38,9 @@ public class ResultsActivity extends AppCompatActivity {
 
         // Set the OnClickListener for the Start Quiz button
         Button buttonStartQuiz = findViewById(R.id.button_start_quiz);
-        buttonStartQuiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startQuiz();
-            }
-        });
+        buttonStartQuiz.setOnClickListener(v -> startQuiz());
         // Display the total score
-        textViewResult.setText("Your Score: " + score);
+        textViewResult.setText(getString(R.string.your_score) + score);
     }
 
 

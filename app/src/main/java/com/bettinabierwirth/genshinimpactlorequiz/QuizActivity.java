@@ -163,7 +163,7 @@ public class QuizActivity extends AppCompatActivity {
             questionCounter++;
             textViewQuestionCount.setText("Question: " + questionCounter + "/" + Math.min(MAX_QUESTIONS, questionCountTotal));
             answered = false;
-            buttonConfirmNext.setText("Confirm");
+            buttonConfirmNext.setText(R.string.confirm);
             // Reset and start the countdown timer for the current question
             timeLeftInMillis = COUNTDOWN_IN_MILLIS;
             startCountDown();
@@ -278,9 +278,9 @@ public class QuizActivity extends AppCompatActivity {
 
         // Update buttonConfirmNext text based on whether there are more questions
         if (questionCounter < questionCountTotal) {
-            buttonConfirmNext.setText("Next");
+            buttonConfirmNext.setText(R.string.next);
         } else {
-            buttonConfirmNext.setText("Finish");
+            buttonConfirmNext.setText(R.string.finish);
         }
 
     }

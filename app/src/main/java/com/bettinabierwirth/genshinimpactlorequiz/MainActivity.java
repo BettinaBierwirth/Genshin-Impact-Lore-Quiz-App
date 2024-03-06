@@ -1,17 +1,14 @@
 package com.bettinabierwirth.genshinimpactlorequiz;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import android.widget.TextView;
+
 
 /**
  * The main activity of the Genshin Impact Lore Quiz application.
@@ -39,12 +36,7 @@ public class MainActivity extends AppCompatActivity {
         // Find the 'Start Quiz' button and set a click listener to start the quiz
 
         Button buttonStartQuiz = findViewById(R.id.button_start_quiz);
-        buttonStartQuiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startQuiz();
-            }
-        });
+        buttonStartQuiz.setOnClickListener(v -> startQuiz());
     }
 
     /**
