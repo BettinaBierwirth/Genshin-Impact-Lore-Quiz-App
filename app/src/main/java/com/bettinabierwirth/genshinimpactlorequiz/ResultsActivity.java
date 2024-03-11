@@ -25,7 +25,7 @@ public class ResultsActivity extends AppCompatActivity {
 
         // Retrieve the score and total questions from the intent
         int score = getIntent().getIntExtra(QuizActivity.EXTRA_SCORE, 0);
-        int totalQuestions = 13;  // Replace 7 with the actual total number of questions
+        int totalQuestions = 20;
 
         // Display the result message based on the score
         TextView textViewResult = findViewById(R.id.text_view_result);
@@ -55,19 +55,19 @@ public class ResultsActivity extends AppCompatActivity {
         double percentage = (double) score / totalQuestions * 100;
 
         if (score == 0) {
-            return "You scored 0%. Try again!";
+            return "What a Loser. Do you even play the game?";
         } else if (score == totalQuestions) {
-            return "Congratulations! You scored 100%.";
+            return "Congratulations! You did very well!";
         } else if (percentage > 0 && percentage <= 25) {
-            return "Nice try! You scored 1-25%.";
+            return "Well it's...something.";
         } else if (percentage > 25 && percentage <= 50) {
-            return "Good effort! You scored 26-50%.";
+            return "You're trying.";
         } else if (percentage > 50 && percentage <= 75) {
-            return "Well done! You scored 51-75%.";
+            return "Well done!";
         } else if (percentage > 75 && percentage < 100) {
-            return "Great job! You scored 76-99%.";
+            return "Here is a dodoco for you!";
         } else {
-            return "Invalid score. Please try again.";
+            return "Invalid score. Try again.";
         }
     }
 

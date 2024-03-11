@@ -18,7 +18,7 @@ import java.util.List;
 public class QuizDbHelper extends SQLiteOpenHelper {
     // Database name and version
     private static final String DATABASE_NAME = "GenshinImpactLoreQuizApp.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     private SQLiteDatabase db;
 
@@ -119,6 +119,56 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q16);
         Question q17 = new Question("Who's special dish is this?", R.drawable.once_upon_a_time_in_mondstadt, "Diluc", "Mona", "Zhongli", "Childe", 1);
         addQuestion(q17);
+        Question q18 = new Question("Which artifact set primarily references the Mare Jivari?", 0, "Lavawalker", "Golden Troupe", "Desert Pavilion Chronicle", "Crimson Witch of Flames", 1);
+        addQuestion(q18);
+        Question q19 = new Question("Which Harbinger is known as \"The Jester\"?", 0, "Arlecchino", "Sandrone", "Pierro", "Capitano", 3);
+        addQuestion(q19);
+        Question q20 = new Question("Who is Nabu Malikata?", 0, "King Deshret", "Greater Lord Rukkhadevata", "Liloupar", "The Goddess of Flowers", 4);
+        addQuestion(q20);
+        Question q21 = new Question("According to The \"Byakuyakoku Collection\", what walks on four feet in the early morning, two feet during the day, and three feet at night?", 0, "A human", "A vishap", "A hilichurl", "A sovereign", 2);
+        addQuestion(q21);
+        Question q22 = new Question("What caused the spread of forbidden knowledge in Sumeru?", 0, "Greater Lord Rukkhadevata pursued the knowledge to save her people from famine.", "King Deshret unleashed the forbidden knowledge in order to revive The Goddess of Flowers.", "Apep devoured King Deshret, who had accidentally consumed the forbidden knowledge.", "Forbidden knowledge was unleashed when the Heavenly Principles pierced Apep with a Divine Nail.", 3);
+        addQuestion(q22);
+        Question q23 = new Question("What process creates Consecrated Beast?", 0, "Smaller lifeforms devouring the remains of stronger lifeforms, such as Gods.", "The devout followers of Gods become powerful after centuries of strenuous training.", "The Withering defiles smaller lifeforms and causes them to grow dangerously powerful.", "Consecrated Beasts are a result of the distortions caused by Ley Lines.", 1);
+        addQuestion(q23);
+        Question q24 = new Question("Which of the following is not one of the Three Sisters of the Lunar Palace?", 0, "Canon", "Aria", "Sonnet", "Melody", 4);
+        addQuestion(q24);
+        Question q25 = new Question("According to legend, why did the Seelies lose their powers and intelligence?", 0, "They fell in love with humans", "They betrayed the Heavenly Principles", "They conspired with Egeria to create new lifeforms", "They assisted Khaenri'ah during the cataclysm", 1);
+        addQuestion(q25);
+        Question q26 = new Question("Who assisted the Pari in protecting the Vourukasha Oasis during the cataclysm?", 0, "Nabu Malikata", "Dainsleif", "Dawn Knight Ragnvindr", "Egeria", 2);
+        addQuestion(q26);
+        Question q27 = new Question("What is a \"Descender\"?", 0, "A person who betrays Celestia's laws", "Another name for a sovereign", "An individual from a nation not under an Archon's rule", "A being that came to Teyvat from another world", 4);
+        addQuestion(q27);
+        Question q28 = new Question("Who is the fourth descender?", 0, "The Heavenly Principles", "The traveler", "Paimon", "The traveler’s sibling", 2);
+        addQuestion(q28);
+        Question q29 = new Question("Who created the Jinn?", 0, "King Deshret", "Greater Lord Rukkhadevata", "Goddess of Flowers", "Lesser Lord Kusanali", 3);
+        addQuestion(q29);
+        Question q30 = new Question("Which of the following characters has Chiori designed clothing for?", 0, "Kirara", "Furina", "Rosaria", "Yelan", 1);
+        addQuestion(q30);
+        Question q31 = new Question("Hu Tao is the ___ Direction of the Wangsheng Funeral Parlor.", 0, "1st", "55th", "99th", "77th", 4);
+        addQuestion(q31);
+        Question q32 = new Question("What is Mika’s title in the Knights of Favonius?", 0, "Front-line surveyor", "Captain of the Reconnaissance Company", "Coordinator of the Knights of Favonius", "Captain of the Investigation Team", 1);
+        addQuestion(q32);
+        Question q33 = new Question("Which of the following nations does not have a unique Seelie?", 0, "Liyue", "Inazuma", "Mondstadt", "Sumeru", 3);
+        addQuestion(q33);
+        Question q34 = new Question("Which building project caused Kaveh to become heavily in debt?", 0, "House of Daena", "Palace of Alcazarzaray", "Zubayr Theater", "Wikala Funduq", 2);
+        addQuestion(q34);
+        Question q35 = new Question("Rhinedottir is responsible for creating a creature known as \"Cretaceus\". What other name is this creature known by?", 0, "Durin", "Riftwolf", "Elynas", "Albedo", 4);
+        addQuestion(q35);
+        Question q36 = new Question("Which group is Klee’s mother, Alice, affiliated with?", 0, "Hexenzirkel", "Verurteilung", "Narzissenkreuz Ordo", "Ipsissimus", 1);
+        addQuestion(q36);
+        Question q37 = new Question("Which two characters list Charcoal-Baked Ajilenakh Cakes as their least favorite food?", 0, "Faruzan and Wanderer", "Alhaitham and Gaming", "Kaveh and Lyney", "Dori and Neuvillette", 4);
+        addQuestion(q37);
+        Question q38 = new Question("What is the name of the construct that Lyney summons with his skill?", 0, "Grim-Malkin Cat", "Grin-Malkin Hat", "Grim-Marking Hat", "Grin-Marking Cat", 2);
+        addQuestion(q38);
+        Question q39 = new Question("How did \"Father\" come to possess her position as a Harbinger and the title of \"Arlecchino\"?", 0, "She killed the previous Arlecchino and took over the orphanage", "She was granted the position by the Tsaritsa after the previous Arlecchino passed away", "She purchased the orphanage from the previous owner", "She framed the previous Arlecchino for murder and took over her place as the leader", 1);
+        addQuestion(q39);
+        Question q40 = new Question("Which character began to harbor ill feelings toward Heizou after he abandoned their partnership?", 0, "Takashi", "Hajime", "Sango", "Ryuuji", 3);
+        addQuestion(q40);
+        Question q41 = new Question("What did Thoma bring to Inazuma as a gift for his father?", 0, "Dandelion Wine", "Apple Cider", "Fruits of the Festival", "Wolfhook Juice", 1);
+        addQuestion(q41);
+        Question q42 = new Question("WWhat is the name of the spirit that possesses Cyno's body?", 0, "King Deshret", "Hermanubis", "Ormazd", "Parvezravan", 2);
+        addQuestion(q42);
 
     }
 

@@ -51,6 +51,7 @@
         android:paddingLeft="10dp"
         android:textSize="40sp" />
     </RelativeLayout>
+
     <ScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"

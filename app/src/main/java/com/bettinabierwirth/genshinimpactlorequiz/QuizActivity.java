@@ -32,7 +32,7 @@ public class QuizActivity extends AppCompatActivity {
 
     public static final String EXTRA_SCORE = "extraScore";
     private static final long COUNTDOWN_IN_MILLIS = 30000;
-    private static final int MAX_QUESTIONS = 13;
+    private static final int MAX_QUESTIONS = 20;
     private TextView textViewQuestion;
     private TextView textViewScore;
     private TextView textViewQuestionCount;
