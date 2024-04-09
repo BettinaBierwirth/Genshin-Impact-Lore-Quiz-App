@@ -191,7 +191,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q52);
         Question q53 = new Question("This artifact set is not the best set for which character?",R.drawable.molten_moment, "Raiden Shogun", "Xiangling", "Beidou", "Kokomi", 4);
         addQuestion(q53);
-        Question q54 = new Question("Which character needs this item to level up?",R.drawable.molten_moment, "Kazuha", "Yelan", "Itto", "Yun Jin", 2);
+        Question q54 = new Question("Which character needs this item to level up?",R.drawable.runic_fang, "Kazuha", "Yelan", "Itto", "Yun Jin", 2);
         addQuestion(q54);
         Question q55 = new Question("Which enemy drops this item?",R.drawable.spectral_heart, "Specters", "Fungi", "Primuses", "Tainted Water Phantasms", 1);
         addQuestion(q55);
