@@ -117,7 +117,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q15);
         Question q16 = new Question("Which character needs this item to ascend?", R.drawable.lakelight_lily, "Wanderer", "Neuvillette", "Furina", "Nilou", 3);
         addQuestion(q16);
-        Question q17 = new Question("Who's special dish is this?", R.drawable.once_upon_a_time_in_mondstadt, "Diluc", "Mona", "Zhongli", "Childe", 1);
+        Question q17 = new Question("This dish is called \"Once upon a Time in Mondstadt\". Who's special dish is this?", R.drawable.once_upon_a_time_in_mondstadt, "Diluc", "Mona", "Zhongli", "Childe", 1);
         addQuestion(q17);
         Question q18 = new Question("Which artifact set primarily references the Mare Jivari?", 0, "Lavawalker", "Golden Troupe", "Desert Pavilion Chronicle", "Crimson Witch of Flames", 1);
         addQuestion(q18);
@@ -167,8 +167,40 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q40);
         Question q41 = new Question("What did Thoma bring to Inazuma as a gift for his father?", 0, "Dandelion Wine", "Apple Cider", "Fruits of the Festival", "Wolfhook Juice", 1);
         addQuestion(q41);
-        Question q42 = new Question("WWhat is the name of the spirit that possesses Cyno's body?", 0, "King Deshret", "Hermanubis", "Ormazd", "Parvezravan", 2);
+        Question q42 = new Question("What is the name of the spirit that possesses Cyno's body?", 0, "King Deshret", "Hermanubis", "Ormazd", "Parvezravan", 2);
         addQuestion(q42);
+        Question q43 = new Question("What is the name of this gadget?",R.drawable.wind_powered_wind_generator, "Wind-Powered Generator", "Wind Generator", "Wind-Powered Wind Generator", "Windy Wind Generator", 3);
+        addQuestion(q43);
+        Question q44 = new Question("This artifact set is called \"Nymph's Dream\". It's the best set for which of the following characters?",R.drawable.odyssean_flower, "Childe", "Alhaitham", "Xingqiu", "Kokomi", 1);
+        addQuestion(q44);
+        Question q45 = new Question("This weapon is called \"Cashflow Supervision\". What is its secondary stat?",R.drawable.cashflow_supervision, "Crit DMG", "Crit Rate", "ATK%", "ER%", 2);
+        addQuestion(q45);
+        Question q46 = new Question("This dish is called \"Shimi Chazuke\". Whose special dish is it?",R.drawable.shimi_chazuke, "Raiden Shogun", "Yae Miko", "Kuki Shinobu", "Wanderer", 4);
+        addQuestion(q46);
+        Question q47 = new Question("This gadget was a gift from which character?",R.drawable.damasked_device, "Moon Carver", "Mountain Shaper", "Guizhong", "Cloud Retainer", 4);
+        addQuestion(q47);
+        Question q48 = new Question("This dish is called \"The Only Truth\". Whose special dish is it?",R.drawable.the_only_truth, "Heizou", "Kujou Sara", "Charlotte", "Ayaka", 1);
+        addQuestion(q48);
+        Question q49 = new Question("This item is called a \"Hoarfrost Core\". Which of the following bosses drops it?",R.drawable.hoarfrost_core, "Cryo Hypostasis", "Solitary Suanni", "Cryo Regisvine", "Icewind Suite", 3);
+        addQuestion(q49);
+        Question q50 = new Question("This talent book is called \"Guide to Admonition\". Which of the following characters uses it to level their talents?",R.drawable.guide_to_admonition, "Wanderer", "Nahida", "Tighnari", "Alhaitham", 3);
+        addQuestion(q50);
+        Question q51 = new Question("This is called a \"Windwheel Aster\". Which character needs it to level up?",R.drawable.windwheel_aster, "Kaeya", "Diluc", "Jean", "Bennett", 4);
+        addQuestion(q51);
+        Question q52 = new Question("This weapon is called \"Song of Broken Pines\". What is its secondary stat?",R.drawable.song_of_broken_pines, "PHY DMG BONUS%", "CRIT DMG", "Crit Rate", "ATK%", 1);
+        addQuestion(q52);
+        Question q53 = new Question("This artifact set is not the best set for which character?",R.drawable.molten_moment, "Raiden Shogun", "Xiangling", "Beidou", "Kokomi", 4);
+        addQuestion(q53);
+        Question q54 = new Question("Which character needs this item to level up?",R.drawable.molten_moment, "Kazuha", "Yelan", "Itto", "Yun Jin", 2);
+        addQuestion(q54);
+        Question q55 = new Question("Which enemy drops this item?",R.drawable.spectral_heart, "Specters", "Fungi", "Primuses", "Tainted Water Phantasms", 1);
+        addQuestion(q55);
+        Question q56 = new Question("What is the name of this outfit for Kaeya?",R.drawable.sailwind_shadow, "Tide Sail", "Sailwind Shadow", "Shadow Pirate", "Sailing Thief", 2);
+        addQuestion(q56);
+        Question q57 = new Question("What is the name of this outfit for Diluc?",R.drawable.red_dead_of_night, "Red Dead of Night", "Red Dawn Hero", "Darknight Hero", "Red Dead Dawn", 1);
+        addQuestion(q57);
+        Question q58 = new Question("What is the name of this outfit for Fischl?",R.drawable.ein_immernachtstraum, "Ein Ewignachttraum", "Ein Immertagtraum", "Ein Immernachtstraum", "Ein Fortbestehendernachttraum", 3);
+        addQuestion(q58);
 
     }
 
